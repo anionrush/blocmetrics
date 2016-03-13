@@ -10,5 +10,6 @@ ActionMailer::Base.smtp_settings = {
   :enable_starttls_auto => true
 }
 
-ActionMailer::Base.default_url_options[:host] = "fashionfreelance.com"
-ActionMailer::Base.register_interceptor(DevelopmentMailInterceptor) if Rails.env.development?
+if Rails.env.development? || Rails.env.test?
+  ActionMailer::Base.register_interceptor(SandboxEmailInterceptor)
+end
