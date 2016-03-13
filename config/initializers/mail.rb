@@ -9,7 +9,3 @@ ActionMailer::Base.smtp_settings = {
   :authentication       => 'plain',
   :enable_starttls_auto => true
 }
-
-if Rails.env.development? || Rails.env.test?
-  ActionMailer::Base.register_interceptor(SandboxEmailInterceptor)
-end
