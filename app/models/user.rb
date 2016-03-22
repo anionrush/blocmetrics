@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
+<<<<<<< HEAD
          :recoverable, :rememberable, :trackable, :validatable
 
   private 
@@ -10,4 +11,8 @@ class User < ActiveRecord::Base
   def send_conf_email
   	SignUpMailer.conf_email(self).deliver_now
   end
+=======
+         :recoverable, :rememberable, :trackable, :validatable,
+         :confirmable
+>>>>>>> 2943ccb7ef2c3d326467fc4d728781d21523847f
 end
