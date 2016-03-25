@@ -17,7 +17,7 @@ class RegisteredApplicationsController < ApplicationController
 		@registered_application = RegisteredApplication.new
 		@registered_application.user = current_user
     @registered_application.name = params[:registered_application][:name]
-    @registered_application.URL = params[:registered_application][:URL]
+    @registered_application.url = params[:registered_application][:url]
 
      if @registered_application.save
       redirect_to registered_applications_path, notice: "Application was saved successfully."

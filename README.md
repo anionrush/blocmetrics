@@ -1,6 +1,6 @@
 # Blocmetrics
 <Project Description>
-This app powers <Project Name> at <Project URL>
+This app powers <Project Name> at https://shrouded-beyond-82277.herokuapp.com/
 ## Getting Started
 ## Software requirements
 - Rails 4.2.3
