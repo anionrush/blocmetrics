@@ -29,6 +29,10 @@ end
 
 registered_applications = RegisteredApplication.all
 
+u.registered_applications.build(
+	name: 'registered app',
+	URL: 'http://registered_application.com')
+
 5.times do 
 	Event.create!(
 			name: Faker::Name.name,
