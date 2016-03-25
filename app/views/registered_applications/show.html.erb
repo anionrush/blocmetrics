@@ -1,4 +1,15 @@
 <h1> <%= @registered_application.name %> </h1>
 <h1> <%= @registered_application.URL %> </h1>
-<%= link_to "Delete Application", @registered_application, method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure you want to stop tracking this application?' } %>
 
+<% @events.each do |event| %>
+ <div class="media">
+   <div class="media-body">
+     <h4 class="media-heading">
+     	<%= event[0] %>
+     	<%= event[1].count %>
+     </h4>
+   </div>
+ </div>
+<% end %>
+
+<%= link_to "Delete Application", @registered_application, method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure you want to stop tracking this application?' } %>
