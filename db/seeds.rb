@@ -16,18 +16,22 @@ users = User.all
 5.times do 
 	RegisteredApplication.create!(
 			name: Faker::Name.name,
-			URL: Faker::Internet.url,
+			url: Faker::Internet.url,
 			user: users.sample)
 end
 
 5.times do 
 	RegisteredApplication.create!(
 			name: Faker::Name.name,
-			URL: Faker::Internet.url,
+			url: Faker::Internet.url,
 			user: u)
 end
 
 registered_applications = RegisteredApplication.all
+
+u.registered_applications.build(
+	name: 'registered app',
+	url: 'http://registered_application.com')
 
 5.times do 
 	Event.create!(
