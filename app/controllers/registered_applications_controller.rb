@@ -1,4 +1,5 @@
 class RegisteredApplicationsController < ApplicationController
+	before_action :authenticate_user!, except: [:index, :show]
 	
 	def index
 		@registered_applications = RegisteredApplication.all
