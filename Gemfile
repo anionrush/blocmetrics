@@ -5,6 +5,8 @@ source 'https://rubygems.org'
  gem 'rails', '4.2.5'
  gem 'devise'
  gem 'figaro'
+ gem 'chartkick'
+ gem 'groupdate'
  
  group :production do
    gem 'pg'
