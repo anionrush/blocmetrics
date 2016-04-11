@@ -1,4 +1,5 @@
 class RegisteredApplicationsController < ApplicationController
+	before_action :authenticate_user!, except: [:index, :show]
 	
 	def index
 		@registered_applications = RegisteredApplication.all
@@ -31,11 +32,11 @@ class RegisteredApplicationsController < ApplicationController
 		@registered_application = RegisteredApplication.find(params[:id])
 
 		if @registered_application.destroy
-       flash[:notice] = "\"#{@registered_application.name}\" was deleted successfully."
-       redirect_to action: :index
+      flash[:notice] = "\"#{@registered_application.name}\" was deleted successfully."
+      redirect_to action: :index
      else
-       flash.now[:alert] = "There was an error deleting the application."
-       render :show
+      flash.now[:alert] = "There was an error deleting the application."
+      render :show
      end
 	end
 end
