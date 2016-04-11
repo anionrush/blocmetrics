@@ -4,7 +4,9 @@
 <h1> <%= @registered_application.name %> </h1>
 <h1> <%= @registered_application.url %> </h1>	
 
+
 <%= pie_chart @registered_application.events.group(:name).count %>
 <%= line_chart @registered_application.events.group_by_day(:created_at).count %>
+
 
 <%= link_to "Delete Application", @registered_application, method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure you want to stop tracking this application?' } %>

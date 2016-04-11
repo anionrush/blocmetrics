@@ -10,6 +10,7 @@ This app powers Blocmetrics at https://shrouded-beyond-82277.herokuapp.com/
 - Ruby 2.2.2p95
 - PostgreSQL 9.3.x or higher
 
+
 ## API
 
 Add the following code into your application's javascript assests:
@@ -34,10 +35,11 @@ From there you can call the blocmetrics.report() function on the page you would 
 
 Into the index.html page if you would like to keep track of the number of times that page is visited. 
 
+
 ## Support
 Bug reports and feature requests can be filed with the rest for the Ruby on Rails project here:
 * {File Bug Reports and Features}[https://github.com/anionrush/blocmetrics/issues]
 ## License
-<Project Name> is released under the <LICENSE-NAME> license.
+Blocmetrics is released under the <LICENSE-NAME> license.
 ## Copyright
 copyright:: (c) Copyright 2015 <Project Name>. All Rights Reserved.

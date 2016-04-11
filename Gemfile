@@ -19,6 +19,7 @@ gem 'rack',                     '1.6.4'
 gem 'rack-cors',                '0.4.0'
 gem 'chartkick',                '1.4.2'
 gem 'groupdate',                '2.5.2'
+
 group :doc do
   gem 'sdoc',                   '~> 0.4.0'
 end
