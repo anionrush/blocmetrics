@@ -42,6 +42,7 @@ group :development, :test do
   # gem 'annotate',               '~> 2.7.0'
   gem 'byebug',                 '~> 4.0.5'
   gem 'capybara',               '~> 2.6.2'
+  gem 'faker',                  '~> 1.6.3'
   gem 'minitest',               '~> 5.5.1'
   gem 'minitest-reporters',     '~> 1.0.11'
   # gem 'poltergeist',            '~> 1.6.0'
