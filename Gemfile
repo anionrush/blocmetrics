@@ -4,11 +4,14 @@ gem 'rails',                    '4.2.6'
 
 gem 'bootstrap-sass',           '~> 3.3.4.1'
 
+gem 'chartkick',                '~> 1.4.2'
 gem 'coffee-rails',             '~> 4.1.1'
 
 gem 'devise',                   '~> 3.4.1'
 
 gem 'figaro',                   '~> 1.1.0'
+
+gem 'groupdate',                '2.5.2'
 
 gem 'jbuilder',                 '~> 2.4.1'
 gem 'jquery-rails',             '~> 4.1.1'
@@ -42,8 +45,8 @@ group :development, :test do
   # gem 'annotate',               '~> 2.7.0'
   gem 'byebug',                 '~> 4.0.5'
   gem 'capybara',               '~> 2.6.2'
+  gem 'minitest',               '~> 5.8.4'
   gem 'faker',                  '~> 1.6.3'
-  gem 'minitest',               '~> 5.5.1'
   gem 'minitest-reporters',     '~> 1.0.11'
   # gem 'poltergeist',            '~> 1.6.0'
   gem 'populator',              '~> 1.0.0'
